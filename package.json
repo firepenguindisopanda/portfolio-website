@@ -1,0 +1,21 @@
+{
+  "name": "portfolio-website",
+  "version": "1.0.0",
+  "description": "[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/firepenguindisopanda/portfolio-website)",
+  "main": "portfolio.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "login": "firebase login --no-localhost",
+    "start": "firebase serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/firepenguindisopanda/portfolio-website.git"
+  },
+  "author": "Nicholas Smith",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/firepenguindisopanda/portfolio-website/issues"
+  },
+  "homepage": "https://github.com/firepenguindisopanda/portfolio-website#readme"
+}
