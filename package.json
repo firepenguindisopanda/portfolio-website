@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "login": "firebase login --no-localhost",
-    "start": "firebase serve"
+    "start": "firebase serve",
+    "deploy": "firebase deploy"
   },
   "repository": {
     "type": "git",
