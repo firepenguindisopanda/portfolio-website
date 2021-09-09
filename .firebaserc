@@ -1,5 +1,7 @@
 {
   "projects": {
-    "default": "portfolio-website"
-  }
+    "default": "portfolio-website",
+    "staging": "portfolio-website-11217"
+  },
+  "targets": {}
 }
