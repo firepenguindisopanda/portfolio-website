@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded',function(event){
   
   
   function typeWriter(text, i, fnCallback) {
-    if (i < (text.length)) {
+    if (i <= text.length) {
       
      document.querySelector("p").innerHTML = text.substring(0, i+1) +'<span aria-hidden="true"></span>';
 
@@ -25,9 +25,7 @@ document.addEventListener('DOMContentLoaded',function(event){
         setTimeout(function() {
           StartTextAnimation(0);
         }, 20000);
-     }
-     
-    if (i <= dataText[i].length) {
+     } else if (i < dataText[i].length) {
       
      typeWriter(dataText[i], 0, function(){
        
