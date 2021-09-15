@@ -4,8 +4,10 @@
   "description": "[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/firepenguindisopanda/portfolio-website)",
   "main": "portfolio.js",
   "scripts": {
+    "setup": "npm i -g firebase-tools",
     "test": "echo \"Error: no test specified\" && exit 1",
     "login": "firebase login --no-localhost",
+    "use": "firebase use portfolio-website-11217",
     "start": "firebase serve",
     "deploy": "firebase deploy"
   },
