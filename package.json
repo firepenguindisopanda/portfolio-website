@@ -7,7 +7,7 @@
     "setup": "npm i -g firebase-tools",
     "test": "echo \"Error: no test specified\" && exit 1",
     "login": "firebase login --no-localhost",
-    "use": "firebase use portfolio-website-11217",
+    "use": "firebase use default",
     "start": "firebase serve",
     "deploy": "firebase deploy"
   },
