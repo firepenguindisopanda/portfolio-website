@@ -97,6 +97,63 @@ body {
   
   padding: 20px;
 }
+/*Beginning of skills layout*/
+#skills {
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  /*
+  display: grid;
+  grid-template-rows: 5fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 8px;
+  
+  border: 1px solid orange;
+  */
+}
+/*
+#skills > div {
+
+  
+  background-color: limegreen;
+  color: white;
+  font-size: 4vw;
+  padding: 8px;
+  border: 1px solid black;
+  height: auto;
+  
+}*/
+
+
+.grid-container {
+  
+  
+  background-color: #0f4b7cd5;
+  
+}
+.grid-item {
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
+  
+}
+.grid-picture-item{
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
+  grid-row: span 3;
+  background-color: #31536ed5;
+}
+
+
+
+#skill_list{
+  width: 100%;
+  height: auto;
+}
+
+/*End of Skills section layout*/
+
 .section-content{
   display: flex;
   flex-direction: column;
@@ -231,17 +288,17 @@ body {
 	-webkit-transform-style: preserve-3d;
 }
 
-#skill_list{
-  width: 100%;
-  height: auto;
-  
-  padding: 4px 4px; 
-}
+
 #cert_list{
   width: 100%;
   height: auto;
-  
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color: #31536ed5;
   padding: 4px 4px; 
+}
+#cert_list > div:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .project-container{
   display: grid;
@@ -255,20 +312,7 @@ body {
   font-size: 30px;
   text-align: center;
 }
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto;
-  background-color: #0f4b7cd5;
-  padding: 10px;
-}
-.grid-item {
-  padding: 20px;
-  font-size: 30px;
-  text-align: center;
-}
-.grid-item:hover{
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
+
 
 .my_projects_display{
   width: 250px;

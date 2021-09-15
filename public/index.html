@@ -5,7 +5,7 @@
   <title>Portfolio Website</title>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="portfolio.css" />
+  <link rel="stylesheet" type="text/css" href="./portfolio.css" />
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
     integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
@@ -100,17 +100,22 @@
       </section>
       <section id="parallax-image" class="p-img">
       </section>
-      <section id="skills" class="section-content">
-        <h1>Skills</h1>
-        <div id="skill_list" class="grid-container">
+      <div style="padding: 5px; text-align: center; background-color: #0f4b7cd5; font-size: 40px;">Skills</div>
+      <section id="skills" class="grid-container">
+        
+        <div id="skill_list" class="grid-item">
 
         </div>
+        <div class="grid-picture-item">
+
+        </div>
+        
       </section>
       <section id="parallax-image" class="p-skill-img">
       </section>
       <section id="certificates" class="section-content">
         <h1>Cerificates</h1>
-        <div id="cert_list" class="grid-container">
+        <div id="cert_list" class="cert-container">
 
         </div>
       </section>
@@ -168,7 +173,7 @@
 
     </div>
   </div>
-  <script src="portfolio.js"></script>
+  <script src="./portfolio.js"></script>
   <script>
     let myIndex = 0;
     carousel();
