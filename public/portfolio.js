@@ -4,21 +4,21 @@ const sk_list = document.getElementById("skill_list");
 const cities = [
   {
     name: "Intermediate Python Developer",
-    population: 12300,
+    qualification: "Google IT Automation with Python Certificate",
     safeToTravel: false,
-    imageLink: "https://weneedfun.com/wp-content/uploads/2016/01/London-City-10.jpg"
+    imageLink: "./assets/python-skill.svg"
   },
   {
     name: "IT Support Specialist",
-    population: 21043,
+    qualification: "Google IT Support Specialist Certificate",
     safeToTravel: true,
-    imageLink: "https://www.bne.com.au/sites/default/files/MAIN_Tokyo_shutterstock_266840009.jpg"
+    imageLink: "./assets/it-support.svg"
   },
   {
     name: "Basic Machine Learning Understanding",
-    population: 15000,
+    qualification: "Amazon AWS Machine Learning Introductory Course",
     safeToTravel: true,
-    imageLink: "https://www.theparisreview.org/blog/wp-content/uploads/2018/01/a-boat-on-the-seine-liudanao1991-pixabay.jpg"
+    imageLink: "./assets/ml-basic.svg"
   }
 ]
 
@@ -28,9 +28,9 @@ function openCity(cityName) {
     if (item.name === cityName) {
       html += `
       <div class="tabcontent image-background" style="background-image: url(${item.imageLink});">
-        <p>${cityName}</p>
-        <p>${item.population}</p>
-        <p>${item.safeToTravel === true ? "Can travel here" : "Can't travel here"}</p>
+        <p class="heading">${cityName}</p>
+        <p class="heading">${item.qualification}</p>
+        <p class="heading">${item.safeToTravel === true ? "Can travel here" : "Can't travel here"}</p>
         
       </div>
     `
@@ -45,7 +45,7 @@ function openCity(cityName) {
 
 document.addEventListener('DOMContentLoaded', function (event) {
 
-  var dataText = ["An aspiring software developer.", "Learning about Machine Learning.", "Learning Web development.", "Learning IT Support Specialist."];
+  var dataText = ["An aspiring software engineer.", "Learning about Machine Learning.", "Learning Web development.", "Obtained Google IT Support Specialist Certificate."];
 
 
   function typeWriter(text, i, fnCallback) {
@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
 
       setTimeout(function () {
         typeWriter(text, i + 1, fnCallback)
-      }, 100);
+      }, 90);
     }
 
     else if (typeof fnCallback == 'function') {
