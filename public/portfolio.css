@@ -7,13 +7,41 @@
   --main-gray: #3e3636;
   --nav-red: #990020;
   --main-background: linear-gradient(to right, rgb(15, 32, 39), rgb(32, 58, 67), rgb(44, 83, 100));
+  --font-family: 'Roboto', sans-serif;
+  --font-size: 18px;
+  --font-weight: 300;
+  --line-height: 1.618;
 }
-
 /*Reset margin and padding*/
 * {
   padding: 0;
   margin: 0;
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  line-height: var(--line-height);
 }
+
+.sub-heading {
+  --font-size: 1.618rem;
+  --font-weight: 600;
+}
+
+.heading {
+  --font-size: 2.618rem;
+  --font-weight: 400;
+}
+
+.large-heading {
+  --font-size: 4.236rem;
+  --font-weight: 500;
+}
+
+.footnote {
+  --font-size: 0.618rem;
+  --font-weight: 500;
+}
+
 html {
   box-sizing: border-box;
   font-size: 62.5%;
