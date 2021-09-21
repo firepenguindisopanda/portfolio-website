@@ -6,6 +6,8 @@
   --main-blue: #1e2a78;
   --main-gray: #3e3636;
   --nav-red: #990020;
+  --nav-blue: #002233;
+  --main-silver: #b9b7b7;
   --main-background: linear-gradient(to right, rgb(15, 32, 39), rgb(32, 58, 67), rgb(44, 83, 100));
   --font-family: 'Roboto', sans-serif;
   --font-size: 18px;
@@ -72,7 +74,7 @@ ul {
 
 a {
   text-decoration: none;
-  color: var(--main-black);
+  color: var(--main-white);
 }
 
 img {
@@ -99,7 +101,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  background: var(--nav-red);
+  background: var(--nav-blue);
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
   z-index: 10;
 }
@@ -120,12 +122,12 @@ body {
 #projects{
   width: 100%;
   height: auto;
-  background-color: var(--main-red);
+  background-color: var(--main-silver);
   color: var(--main-black);
   padding: 10px; 
 }
 #projects p, h1{
-  color: whitesmoke;
+  color: var(--nav-blue);
 }
 #contact{
   

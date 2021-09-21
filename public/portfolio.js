@@ -28,7 +28,7 @@ function openCity(cityName) {
     if (item.name === cityName) {
       html += `
       <div class="tabcontent image-background" style="background-image: url(${item.imageLink});">
-        <p class="heading">${cityName}</p>
+        <p class="heading">${item.name}</p>
         <p class="heading">${item.qualification}</p>
         <p class="heading">${item.safeToTravel === true ? "Can travel here" : "Can't travel here"}</p>
         
