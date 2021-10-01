@@ -393,6 +393,18 @@ body {
   color: var(--main-white);
 }
 
+/*
+Contact Form Styling
+*/
+#contact-form{
+  width: 100%;
+}
+form{
+  width: 100%;
+}
+fieldset{
+  width: 100%;
+}
 
 /* Responsive layout - makes a one column layout instead of a two-column layout */
 @media (max-width: 800px) {
