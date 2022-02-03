@@ -1,189 +1,528 @@
-<!doctype html>
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html lang="en">
 
 <head>
-  <title>Portfolio Website</title>
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="./portfolio.css" />
-
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai&family=Kaisei+Opti&display=swap"
-    rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Merriweather:700&display=swap" rel="stylesheet" />
-
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Nicholas' Portfolio</title>
+    <link rel="shortcut icon" href="./assests/panda-struggle.svg">
+    <meta name="description" content="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Quintessential&family=Ubuntu:ital,wght@0,400;0,700;1,300&family=Zen+Antique&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="default.css">
+    <link id="theme-style" rel="stylesheet" href="./default.css">
 </head>
 
-<body>
-  <div class="sticky-container">
-    <ul class="sticky">
-      <li>
-        <a href="https://www.facebook.com/profile.php?id=100069755109524" target="_blank" ><i class="fab fa-facebook-square"></i> Facebook</a>
-      </li>
-      <li>
-        <a id="profile-link" href="https://github.com/firepenguindisopanda" target="_blank" ><i class="fab fa-github"></i> Github</a>
-      </li>
-      <li>
-        <a href="https://twitter.com/NicholasDefrei2" target="_blank"><i class="fab fa-twitter-square"></i> Twitter</a>
-      </li>
-      <li>
-        <a href="https://www.linkedin.com/in/nicholas-smith-933125148/" target="_blank"><i class="fab fa-linkedin"></i> Linkedin</a>
-      </li>
-    </ul>
-  </div>
-  <div class="container">
-    
-    <nav id="navbar" class="navigation">
-      <ul class="nav-menu">
-        <li>
-          <a href="#welcome-section" class="scrollLink">About Me</a>
-        </li>
-        <li>
-          <a href="#projects" class="scrollLink">Projects</a>
-        </li>
-        <li>
-          <a href="#skills" class="scrollLink">Skills</a>
-        </li>
-        <li>
-          <a href="#contact" class="scrollLink">Contact</a>
-        </li>
-      </ul>
-    </nav>
-    <div id="main-content">
-      <section id="welcome-section" class="section-content">
-        <h1 class="large-heading">Hey I'm Nick</h1>
-        <p></p>
-        <br>
-        <div class="buttons heading">
-          <button class="button"><span> Take a look at my work</span></button>
-          <button class="button"><span> Contact Me</span></button>
-        </div>
-        
-      </section>
-      <section id="parallax-image" class="p-img">
-      </section>
-      <section id="projects" class="projects-content">
-        <h1 class="heading">Projects</h1>
-        <p>These are a few of my projects.</p>
-        <div class="project-container">
-          <div class="my_projects_item">
-            <a href="https://codepen.io/firepenguindisopanda/full/WNGgjrZ" target="_blank">
-              <img loading="lazy" src="https://assets.codepen.io/5495440/internal/screenshots/pens/WNGgjrZ.default.png?fit=cover&format=auto&ha=false&height=540&quality=75&v=2&version=1610391684&width=960" alt="Tribute page to Alan Turing"/>
-              <div class="conr">
-                <p class="project-tile">Tribute Page to Alan Turing</p>
-              </div>
-            </a>
-          </div>
-          <div class="my_projects_item">
-            <a href="#!">
-              <img loading="lazy" src="https://assets.codepen.io/5495440/internal/screenshots/pens/powoPpM.default.png?fit=cover&format=auto&ha=false&height=540&quality=75&v=2&version=1630351218&width=960" alt="Personal Website Portfolio" />
-              <div class="conr">
-                <p class="project-tile">Personal Portfolio</p>
-              </div>
-            </a>
-          </div>
-          <div class="my_projects_item">
-            <a href="https://codepen.io/firepenguindisopanda/full/BaLOvpB" target="_blank">
-              <img loading="lazy" src="https://assets.codepen.io/5495440/internal/screenshots/pens/BaLOvpB.default.png?fit=cover&format=auto&ha=false&height=540&quality=75&v=2&version=1610430239&width=960" alt="Survey Form Project"/>
-              <div class="conr">
-                <p class="project-tile">Survey Form</p>
-              </div>
-            </a>
-          </div>
-        </div>
-      </section>
-      <section id="parallax-image" class="p-img">
-      </section>
-      <div style="padding: 5px; text-align: center; background-color: #0f4b7cd5; font-size: 40px;">Skills</div>
-      <section id="skills" class="grid-container">
-        
-        <div id="skill_list" class="grid-item tab">
+<body onload="calcAge()">
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
 
-        </div>
-        <div id="res" class="grid-picture-item">
+    <section class="section-one">
+        <div class="main-container">
+            <div class="greeting-wrapper">
+                <img id="panda-img" src="./assests/panda-struggle.svg" alt="Panda Sleeping" height="50px">
+                <h1>Hey, I'm Nicholas Smith.</h1>
+                <span class="text-change">Here description will change periodically</span>
+                
 
-        </div>
-        
-      </section>
-      
-      <section id="certificates" class="section-content">
-        <h1 class="heading">Cerificates</h1>
-        <div id="cert_list" class="cert-container">
+            </div>
+            <div class="intro-wrapper">
+                <div class="nav-wrapper">
+                    <div class="dots-wrapper">
+                        <a href="#about">
+                            <div id="dot-one" class="browser-dot">
+                                <span id="tooltipone" class="tooltiptext">About</span>
+                            </div>
+                        </a>
+                        <a href="#portfolio">
+                            <div id="dot-two" class="browser-dot">
+                                <span id="tooltiptwo" class="tooltiptext">Portfolio</span>
+                            </div>
+                        </a>
+                        <a href="#certificates">
+                            <div id="dot-three" class="browser-dot">
+                                <span id="tooltipthree" class="tooltiptext">Certificates</span>
+                            </div>
+                        </a>
 
-        </div>
-      </section>
-      <section id="parallax-image" class="p-skill-img">
-      </section>
-      <section id="contact" class="section-content">
-        <h1 class="heading" style="margin-bottom: 10px;">Contact Me and Let's work together on a project
-        </h1>
-        <div id="contact-list">
-          <a href="https://www.facebook.com/profile.php?id=100069755109524" target="_blank" class="details"><i class="fab fa-facebook-square"></i> Facebook</a>
-          <a id="profile-link" href="https://github.com/firepenguindisopanda" target="_blank" class="details"><i class="fab fa-github"></i> Github</a>
-          <a href="https://twitter.com/NicholasDefrei2" target="_blank" class="details><i class="fab fa-twitter"></i> Twitter</a>
-          <a></a>
-          <a href="mailto:nicholas122008@hotmail.com" class="details"><i class="fas fa-at"></i> Send an e-mail</a>
-        </div>
-        <div id="contact-form">
-          <form>
-            <fieldset>
-              <legend>
-                Send me a message!
-              </legend>
-              <div class="row">
-                <div class="col">
-                  <label for="fname">First Name</label>
-                </div>
-                <div class="col">
-                  <input type="text" id="fname" name="firstname" placeholder="Your first name..">
-                </div>
-              </div>
-              <div class="row">
-                <div class="col">
-                  <label for="lname">Last Name</label>
-                </div>
-                <div class="col">
-                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-                </div>
-              </div>
-              <div class="row">
-                <div class="col">
-                  <label for="subject">Subject</label>
-                </div>
-                <div class="col">
-                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-                </div>
-              </div>
-              <div class="row">
-                <input type="submit" value="Submit">
-              </div>
-            </fieldset>
-          </form>
-        </div>
-      </section>
+                    </div>
 
-    </div>
-  </div>
-  <script src="./portfolio.js"></script>
-  <script>
-    let myIndex = 0;
-    carousel();
-    function carousel(){
-      let i ;
-      let x = document.getElementsByClassName("my_projects_item");
-      for(i = 0; i < x.length; i++){
-        x[i].style.display = "none";
-      }
-      myIndex++;
-      if(myIndex > x.length){
-        myIndex = 1;
-      }
-      x[myIndex-1].style.display = "block";
-      setTimeout(carousel, 3000);
-    }
-  </script>
+                    <ul id="navigation">
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="left-column">
+                    <img id="profile-pic" src="./assests/prof_pic.jpg" alt="Picture of Nicholas Smith">
+                    <div id="info-card">
 
+                    </div>
+                    <h5>Personalize Theme</h5>
+                    <div id="theme-options-wrapper">
+                        <div data-mode="light" id="light-mode" class="theme-dot"></div>
+                        <div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+                    </div>
+                    <p id="settings-note">Theme settings will be saved for<br>your next visit</p>
+                </div>
+                <div class="right-column">
+                    <div id="theme-options-wrapper">
+                        <div id="green-mode" class="btn-bubble">Information</div>
+                        <div id="purple-mode" class="btn-bubble">Interests</div>
+                    </div>
+                    <div id="preview-shadow">
+                        <div id="preview">
+                            <div id="corner-tl" class="corner">
+                            </div>
+                            <div id="corner-tr" class="corner">
+                            </div>
+                            <div id="age"></div>
+                            <h3>
+                                What I Do
+                            </h3>
+                            <p>
+                                I enjoy solving problems,<br>currently learning to become a better developer/engineer.
+                            </p>
+                            <div id="corner-br" class="corner">
+                            </div>
+                            <div id="corner-bl" class="corner">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="section-two">
+        <div class="main-container">
+            <div class="about-wrapper">
+                <div class="about-me">
+                    <h4>About Me</h4>
+                    <p>
+                        I like to look for online courses to give me an introductory understanding of different
+                        techonologies I want to practice using in projects.
+
+                    </p>
+                    <p>
+                        After completing these online courses I would make side projects to put my understanding to the
+                        test.
+                    </p>
+                    <p>
+                        I like to solve puzzles. I use online platforms like <a href="#">Hackkerank</a>, <a
+                            href="#">Leetcode</a>, <a href="#">CodeWars</a>, <a href="#">Project Euler</a> and <a
+                            href="#"> Advent of Code</a> to practice solving puzzles/problems.
+                    </p>
+                    <hr>
+                    <h4>Fullstack Developer with primary focus on React + Angular : <a target="_blank"
+                            href="./NicholasSmith_Resume.pdf">Download Resume</a></h4>
+                    <p>
+                        Experience With:
+                    </p>
+                    <div id="skills">
+                        <ul>
+                            <li>
+                                Python
+                            </li>
+                            <li>
+                                Javascript/Typescript
+                            </li>
+                            <li>
+                                C++/C
+                            </li>
+                            <li>
+                                Java
+                            </li>
+                            <li>
+                                SQL
+                            </li>
+                            <li>
+                                Bash Scripting
+                            </li>
+                            <li>
+                                PHP
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                Django
+                            </li>
+                            <li>
+                                Flask
+                            </li>
+                            <li>
+                                React js
+                            </li>
+                            <li>
+                                Angular js
+                            </li>
+                            <li>
+                                Express js
+                            </li>
+                            <li>
+                                Node js
+                            </li>
+                            <li>
+                                Postgres
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                Github
+                            </li>
+                            <li>
+                                Firebase
+                            </li>
+                            <li>
+                                Mongo
+                            </li>
+                            <li>
+                                Trello
+                            </li>
+                            <li>
+                                Heroku
+                            </li>
+                            <li>
+                                AWS
+                            </li>
+                            <li>
+                                Netlify
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="social-links">
+
+                    <h2>Places You Can Find Me On The Internet!</h2>
+                    <div class="social-links-wrapper">
+                        <a href="">Instagram</a>
+                        <a href="">Facebook</a>
+                        <a href="">Twitter</a>
+                        <a href="">LinkedIn</a>
+                        <a href="">Github</a>
+                        <a href="">Discord</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="portfolio" class="section-one">
+        <div class="main-container">
+            <h3 style="text-align: center;">Some of my work in progress Projects</h3>
+            <div class="post-wrapper">
+                <div>
+                    <div class="post">
+
+                        <img class="thumbnail" src="./assests/ml-basic.svg" alt="projects">
+                        <div class="post-preview">
+                            <h6 class="post-title">Recipe Website</h6>
+                            <p class="post-intro">Designed using Flask and Postgresql database and deployed on Heroku
+                            </p>
+                            <a class="disabled" href="projects.html">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="post">
+                        <img class="thumbnail" src="./assests/ml-basic.svg" alt="projects">
+
+                        <div class="post-preview">
+                            <h6 class="post-title">Note's App</h6>
+                            <p class="post-intro">Designed using React Nodejs express and MongoDB and deployed on
+                                Heroku.</p>
+                            <a class="disabled" href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="post">
+                        <img class="thumbnail" src="./assests/ml-basic.svg" alt="projects">
+                        <div class="post-preview">
+                            <h6 class="post-title">Phonebook App</h6>
+                            <p class="post-intro">Designed using React Nodejs express and MongoDB and deployed on
+                                Heroku.</p>
+                            <a class="disabled" href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div>
+                    <div class="post">
+                        <img class="thumbnail" src="./assests/ml-basic.svg" alt="projects">
+                        <div class="post-preview">
+                            <h6 class="post-title">Macko App</h6>
+                            <p class="post-intro">Designed using React Nodejs express and MongoDB and intended to deploy
+                                on heroku.</p>
+                            <a class="disabled" href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div>
+                    <div class="post">
+                        <img class="thumbnail" src="./assests/ml-basic.svg" alt="projects">
+                        <div class="post-preview">
+                            <h6 class="post-title">Instagram Clone App</h6>
+                            <p class="post-intro">Designed using React and Firebase and intending to deploy on firebase.
+                            </p>
+                            <a class="disabled" href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div>
+                    <div class="post">
+                        <img class="thumbnail" src="./assests/movie_app_project.png" alt="projects">
+                        <div class="post-preview">
+                            <h6 class="post-title">Movie App</h6>
+                            <p class="post-intro">Designed using Angular and hosted on netlify using dcit movie api to
+                                collect movies.</p>
+                            <a target="_blank" href="https://github.com/firepenguindisopanda/DCIT-Movie-App">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <h3 style="text-align: center;">Some of my completed basic projects on codepen</h3>
+            <div class="post-wrapper">
+                <div>
+                    <div class="post">
+
+                        <img class="thumbnail" loading="lazy"
+                            src="https://assets.codepen.io/5495440/internal/screenshots/pens/WNGgjrZ.default.png?fit=cover&format=auto&ha=false&height=180&quality=75&v=2&version=1610391684&width=318"
+                            alt="Tribute page to Alan Turing" />
+                        <div class="post-preview">
+                            <h6 class="post-title">Tribute to Alan Turing</h6>
+                            <p class="post-intro">A tribute webpage to the late Alan Mathison Turing. This was created
+                                for an assignment of freecodecamp</p>
+                            <a class="disabled" href="#">Read More</a>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div>
+                    <div class="post">
+                        <img class="thumbnail" loading="lazy"
+                            src="https://assets.codepen.io/5495440/internal/screenshots/pens/powoPpM.default.png?fit=cover&format=auto&ha=false&height=540&quality=75&v=2&version=1630351218&width=960"
+                            alt="Personal Website Portfolio" />
+
+                        <div class="post-preview">
+                            <h6 class="post-title">First portfolio website</h6>
+                            <p class="post-intro">This was one of my first designs for a portfolio webpage. It was
+                                created for an assignment of freecodecamp.</p>
+                            <a class="disabled" href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div>
+                    <div class="post">
+                        <img class="thumbnail" loading="lazy"
+                            src="https://assets.codepen.io/5495440/internal/screenshots/pens/BaLOvpB.default.png?fit=cover&format=auto&ha=false&height=540&quality=75&v=2&version=1610430239&width=960"
+                            alt="Survey Form Project" />
+                        <div class="post-preview">
+                            <h6 class="post-title">Survey Form</h6>
+                            <p class="post-intro">This was created for an assignment on freecodecamp. It helped me gain
+                                a better understanding on making forms</p>
+                            <a class="disabled" href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="certificates" class="section-two">
+        <div class="main-container">
+            <h3 style="text-align: center;">Certificates/Badges</h3>
+            <div class="post-wrapper">
+                <div class="certs-badge-container">
+                    <div class="post">
+
+                        <img class="thumbnail" src="./assests/auto_real_task_python.png" alt="projects">
+
+                    </div>
+                </div>
+
+                <div class="certs-badge-container">
+                    <div class="post">
+                        <img class="thumbnail" src="./assests/bytes_bits_comp_net.png" alt="projects">
+
+
+                    </div>
+                </div>
+
+                <div class="certs-badge-container">
+                    <div class="post">
+                        <img class="thumbnail" src="./assests/cert_badge.png" alt="projects">
+
+                    </div>
+                </div>
+
+
+                <div class="certs-badge-container">
+                    <div class="post">
+                        <img class="thumbnail" src="./assests/cert_it_auto_python.png" alt="projects">
+
+                    </div>
+                </div>
+
+
+                <div class="certs-badge-container">
+                    <div class="post">
+                        <img class="thumbnail" src="./assests/cert_it_support.png" alt="projects">
+
+                    </div>
+                </div>
+
+
+
+                <div class="certs-badge-container">
+                    <div class="post">
+                        <img class="thumbnail" src="./assests/config_manage_cloud.png" alt="projects">
+
+                    </div>
+                </div>
+
+                <div class="certs-badge-container">
+                    <div class="post">
+                        <img class="thumbnail" src="./assests/crash_course_python.png" alt="projects">
+
+                    </div>
+                </div>
+
+                <div class="certs-badge-container">
+                    <div class="post">
+                        <img class="thumbnail" src="./assests/data_found.png" alt="projects">
+
+                    </div>
+                </div>
+
+                <div class="certs-badge-container">
+                    <div class="post">
+                        <img class="thumbnail" src="./assests/found_proj_manage.png" alt="projects">
+
+                    </div>
+                </div>
+
+                <div class="certs-badge-container">
+                    <div class="post">
+                        <img class="thumbnail" src="./assests/git_github.png" alt="projects">
+
+                    </div>
+                </div>
+
+                <div class="certs-badge-container">
+                    <div class="post">
+                        <img class="thumbnail" src="./assests/it_security.png" alt="projects">
+
+                    </div>
+                </div>
+
+                <div class="certs-badge-container">
+                    <div class="post">
+                        <img class="thumbnail" src="./assests/it_sup_badge.png" alt="projects">
+
+                    </div>
+                </div>
+
+                <div class="certs-badge-container">
+                    <div class="post">
+                        <img class="thumbnail" src="./assests/os_pow_user.png" alt="projects">
+
+                    </div>
+                </div>
+
+                <div class="certs-badge-container">
+                    <div class="post">
+                        <img class="thumbnail" src="./assests/python_os.png" alt="projects">
+
+                    </div>
+                </div>
+
+                <div class="certs-badge-container">
+                    <div class="post">
+                        <img class="thumbnail" src="./assests/sys_admin_infra.png" alt="projects">
+
+                    </div>
+                </div>
+
+                <div class="certs-badge-container">
+                    <div class="post">
+                        <img class="thumbnail" src="./assests/tech_sup_fund.png" alt="projects">
+
+                    </div>
+                </div>
+
+                <div class="certs-badge-container">
+                    <div class="post">
+                        <img class="thumbnail" src="./assests/troub_shoot_debug.png" alt="projects">
+
+                    </div>
+                </div>
+
+                <div class="certs-badge-container">
+                    <div class="post">
+                        <img class="thumbnail" src="./assests/icpc_caribbean_finals_qualifier.png" alt="projects">
+
+                    </div>
+                </div>
+
+                <div class="certs-badge-container">
+                    <div class="post">
+                        <img class="thumbnail" src="./assests/icpc_caribbean_finals.png" alt="projects">
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="section-one">
+        <div class="main-container">
+            <div id="contact-wrapper">
+                <div class="left-column">
+                    I'm left column
+                </div>
+                <div class="right-column">
+                    <h3 style="text-align: center;">Get In Touch With Me To Collaborate!</h3>
+                    <form id="contact-form" action="">
+                        <label for="name">Name</label>
+                        <input class="input-field" type="text" name="name">
+
+                        <label for="subject">Subject</label>
+                        <input type="text" name="subject" class="input-field">
+
+                        <label for="email">Email</label>
+                        <input type="email" name="email" class="input-field">
+
+                        <label for="message">Message</label>
+                        <textarea name="message" class="input-field" cols="30" rows="10"></textarea>
+
+                        <input id="submit-btn" type="submit" value="Send">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./main.js" async defer></script>
+    <script src="./script.js" async defer></script>
 </body>
 
 </html>
