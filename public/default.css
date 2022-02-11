@@ -308,6 +308,14 @@ section{
     color: whitesmoke;
     
 }
+.social-links-wrapper > a > i{
+    width: 40px;
+    font-size: 1.5em;
+    border-bottom: 1px solid rgb(252, 251, 249);
+}
+.social-links-wrapper > a > i:hover{
+    font-size: 1.8em;
+}
 .social-links{
     background-image: url(./assests/hero-image.svg);
     display: grid;
