@@ -235,7 +235,11 @@ section{
 }
 .left-column{
     grid-area: left-column;
-    padding: 50px 0px;
+    padding: 0px 0px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
 }
 .left-column h5{
     text-align: center;
